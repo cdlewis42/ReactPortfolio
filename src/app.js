@@ -1,14 +1,16 @@
 import React,{Component} from "react"
+import Wrapper from "./components/Wrapper"
 import Carousel from "./components/Carousel"
+import Jumbotron from "./components/Jumbotron"
 
 class App extends Component{
 render(){
     return (
-        <div className = "page-container">
-            <div className = "content-wrap">
-                <Carousel/>
-            </div>
-        </div>
+        <Wrapper>
+            {<Jumbotron></Jumbotron>}
+            <Carousel/>
+        </Wrapper>
+            
     )
 }
 }
